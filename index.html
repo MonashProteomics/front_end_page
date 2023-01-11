@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    
+    <title>Analyst Suites</title>
+    
+    <script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
+    <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+    <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+    <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+    <style>h1 {font-size: 34px;}
+      h1.title {font-size: 38px;}
+      h2 {font-size: 30px;}
+      h3 {font-size: 24px;}
+      h4 {font-size: 18px;}
+      h5 {font-size: 16px;}
+      h6 {font-size: 12px;}
+      code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+      pre:not([class]) { background-color: white }
+    </style>
+    <script src="site_libs/navigation-1.1/tabsets.js"></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E61MN2NS4S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-E61MN2NS4S');
+    </script>
+    
+    
+    <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+    </style>
+    
+    
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    
+    
+    <style type = "text/css">
+      .main-container 
+      {
+        /*max-width: 940px;*/
+        /*max-width: 1800px;*/
+        max-width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      img
+      {
+        max-width:100%;
+      }
+      
+      .tabbed-pane
+      {
+        padding-top: 12px;
+      }
+      
+      .html-widget
+      {
+        margin-bottom: 20px;
+      }
+      
+      button.code-folding-btn:focus
+      {
+        outline: none;
+      }
+      
+      summary
+      {
+        display: list-item;
+      }
+      
+      details > summary > p:only-child 
+      {
+        display: inline;
+      }
+      
+      pre code
+      {
+        padding: 0;
+      }
+    
+    </style>
+    
+    
+    <!-- tabsets -->
+    
+    <style type="text/css">
+      .tabset-dropdown > .nav-tabs
+      {
+        display: inline-table;
+        max-height: 500px;
+        min-height: 44px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before
+      {
+        content: "\e259";
+        font-family: 'Glyphicons Halflings';
+        display: inline-block;
+        padding: 10px;
+        border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before 
+      {
+        content: "\e258";
+        font-family: 'Glyphicons Halflings';
+        border: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active
+      {
+        display: block;
+      }
+      
+      
+      .tabset-dropdown > .nav-tabs > li > a,
+      .tabset-dropdown > .nav-tabs > li > a:focus,
+      .tabset-dropdown > .nav-tabs > li > a:hover
+      {
+        border: none;
+        display: inline-block;
+        border-radius: 4px;
+        background-color: transparent;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li
+      {
+        display: block;
+        float: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li
+      {
+        display: none;
+      }
+    </style>
+
+    <!-- code folding -->
+  
+  </head>
+  
+  <body>
+    <div class="container-fluid main-container">
+      <div id="header">
+      </div>
+      
+      <style type="text/css">
+        .main-container
+        {
+          /* max-width: 1800px;
+          margin-left: auto;
+          margin-right: auto;*/
+          max-width: 100% !important;
+          margin: auto;
+        }
+      </style>
+
+      <!--
+        ---
+        title: <span style="color:grey">Web-Applications for MS Proteomics</span>
+        subtitle: <span style="color:grey">This platform directs you to the right tools required for analysing and visualising mass spectrometry (MS)-based pre-processed proteomics data.</span>
+        output: html_document
+        ---
+      -->
+      
+      <!-- Start head HTML part --------------------------------------------------------------------------------------------------------------------- -->
+      <!-- Google tag (gtag.js) -->
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E61MN2NS4S"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-E61MN2NS4S');
+        </script>
+      </head>
+      
+      <!-- Start Header and About part -------------------------------------------------------------------------------------------------------------- -->
+      <nav>
+        <ul>
+          <li>
+            <a class="active" href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header">
+        <p> Proteomic Analyst Suites</p>
+        <p>
+        </p>
+      </div>
+
+      <div>
+        <p class="subheader">A Compilation of Easy-To-Use Web Applications for <br> Proteomic Data Analysis and Visualisation <br><br>
+          <p class="p2"> Powered by
+            <a href="https://www.monash.edu/researchinfrastructure/mpmf">MPMF</a>
+            and
+            <a href="https://www.monash.edu/researchinfrastructure/bioinformatics">MBP</a>
+          </p>
+        </p>
+      <p><br><br><br><br><br></p>
+      </div>
+
+      <!-- Start Body part ------------------------------------------------------------------------------------------------------------------------ -->
+      <!-- Tiles on row 1 --> 
+      <div class="cards">
+         <!-- 1. LFQ-Analyst -->
+        <div class="card">
+          <!--<div class="tile">-->
+            <div class="webapps webapp1">
+              <div class="showhim">
+                <h2 class="project-text">
+                  <!-- <a href="http://118.138.235.40:3838/LFQ-Analyst_Fragpipe/" style="color:#0f293c">LFQ-Analyst<h4>(MaxQuant)</h4></a> -->
+                  <a href="apps/lfq-analyst" style="color:#FFFFFF">LFQ-Analyst</a>
+                  <h5 style="color:#18cb3f; text-align:center">(Requires MaxQuant Output Data)</h5>
+                </h2>
+                <div class="showme">
+                  <h5 class="sub-unit">
+                    <br><br> Fully automated downstream statistical analysis and
+                    visualisation tool for <em>label-free</em> quantitative proteomic data
+                    pre-processed with <strong>MaxQuant</strong>. <br><br> For more information, please see our publication at <a
+                    href="https://pubs.acs.org/doi/10.1021/acs.jproteome.9b00496">ACS Publications</a>. <br><br>
+                  </h5>
+                </div>
+              </div>
+            </div>
+        </div>  
+
+         <!-- 2. LFQ-Analyst-DEV -->
+         <div class="card">
+          <!--<div class="tile">-->
+            <div class="webapps webapp2">
+              <div class="showhim">
+                <h2 class="project-text">
+                  <!-- <a href="http://118.138.235.40:3838/LFQ-Analyst_Fragpipe/" style="color:#0f293c">LFQ-Analyst<h4>(MaxQuant)</h4></a> -->
+                  <a href="apps/lfq-analyst-dev" style="color:#FFFFFF">LFQ-Analyst-Dev</a>
+                  <h5 style="color:#18cb3f; text-align:center">(Requires MaxQuant Output Data)</h5>
+                </h2>
+                <div class="showme">
+                  <h5 class="sub-unit">
+                    <br><br> This is the development version of the LFQ-Analyst. <br><br>
+                  </h5>
+                </div>
+              </div>
+            </div>
+        </div>  
+        
+        <!-- 3. Phospho-Analyst -->
+        <div class="card">
+          <!--<div class="tile">-->
+            <div class="webapps webapp3">
+              <div class="showhim">
+                <h2 class="project-text sub-unit3">
+                  <!-- <a href="http://118.138.235.40:3838/PhosphoAnalyst/" style="color:#0f293c" >Phospho-Analyst</a> -->
+                  <a href="apps/phospho-analyst" style="color:#000000" >Phospho-Analyst</a>
+                  <h5 style="color:#18cb3f; text-align:center">(Requires MaxQuant Output Data)</h5>
+                </h2>
+                <div class="showme">
+                  <h5 class="sub-unit"> 
+                    <br><br> Fully automated downstream statistical analysis and visualisation tool for <em>phosphoproteomic</em> datasets pre-processed with MaxQuant. <br><br>
+                  </h5>
+                </div>
+              </div>
+            </div>
+        </div>
+          
+          
+
+          
+        <!-- Tiles on row 2 -->
+        <!-- 4. FragPipe-Analyst -->
+        <div class="card">
+          <!--<div class="tile">-->
+            <div class="webapps webapp4">
+              <div class="showhim">
+                <h2 class="project-text">
+                  <!-- <a href="http://118.138.235.40:3838/LFQ-Analyst_Fragpipe/" style="color:#0f293c" >FragPipe-Analyst</a> -->
+                  <a href="apps/fragpipe-analyst" style="color:#FFFFFF" >FragPipe-Analyst</a><br><br> 
+                </h2>
+                <div class="showme">
+                  <h5 class="sub-unit">
+                    <br><br> Recommended downstream statistical analysis and visualisation tool for proteomic data pre-processed with <em>FragPipe</em> and other 
+                    selected software packages developed in the <a href="https://fragpipe.nesvilab.org/">Nesvizhskii Lab</a>. <br><br>
+                  </h5>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- 5. DIA-Analyst -->
+        <div class="card">
+          <!--<div class="tile">-->
+            <div class="webapps webapp5">
+              <div class="showhim">
+                <h2 class="project-text">
+                  <a style="color:#FFFFFF" >DIA-Analyst</a><br><br> 
+                </h2>
+                <div class="showme">
+                  <div class="sub-unit">
+                    <br><br> DIA-Analyst is under development and will be released soon. <br><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- 6. TMT-Analyst -->
+        <div class="card">
+          <!--<div class="tile">-->
+            <div class="webapps webapp6">
+              <div class="showhim">
+                <h2 class="project-text">
+                  <a style="color:#000000" >TMT-Analyst</a><br><br> 
+                </h2>
+                <div class="showme">
+                  <div class="sub-unit">
+                    <br><br> TMT-Analyst is under development and will be released soon. <br><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+          
+        <!-- 6. XXX-Analyst 
+        <div class="card">
+            #<div class="tile">
+            <div class="webapps webapp6">
+              <div class="showhim">
+                <h2 class="project-text">
+                  <a href="apps/tmt-analyst" style="color:#000000" ></a> <br><br> 
+                </h2>
+                <div class="showme">
+                  <div class="sub-unit">
+                    <br><br> More analyst tools to come. <br><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>-->
+      </div>
+    </div>
+  </div>
+
+      <!-- Start footer part ------------------------------------------------------------------------------------------------------------------- -->
+      <!-- Feedback -->
+      <div class="feedback">
+        <p> For any feedback or issues regarding the apps, please reach out on our
+          <a href="https://github.com/MonashProteomics/" >GitHub</a>.
+        </p>
+      </div>
+      
+      <!-- End HTML part ------------------------------------------------------------------------------------------------------------------------ -->
+      
+      &nbsp;
+      <hr />
+      <div class="footer-background">
+      <p style="text-align: center; font-family: Arial, Helvetica, sans-serif; color: #FFFFFF;">A work by:</p>
+      <p style="text-align: center;"> <a href="https://www.monash.edu/researchinfrastructure/mpmf/" </a> Monash Proteomics and Metabolomics Facility </p>
+      <p style="text-align: center;"> <a href="https://www.monash.edu/researchinfrastructure/bioinformatics" </a> Monash Bioinformatics Platform </p>
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Add font awesome icons -->
+      <p style="text-align: center;">
+        <a href="https://github.com/MonashProteomics/" class="fa fa-github"></a>
+        <a href="https://www.monash.edu/" class="fa fa-university"></a>
+      </p>
+
+      &nbsp;
+      </div>
+    </div>
+    
+    <script>
+      // add bootstrap table styles to pandoc tables
+      function bootstrapStylePandocTables()
+      {
+        $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+      }
+      
+      $(document).ready(function () {
+        bootstrapStylePandocTables();
+      });
+    </script>
+    
+    <!-- tabsets -->
+    
+    <script>
+      $(document).ready(function () {
+        window.buildTabsets("TOC");
+      });
+      
+      $(document).ready(function () {
+        $('.tabset-dropdown > .nav-tabs > li').click(function () {
+          $(this).parent().toggleClass('nav-tabs-open');
+        });
+      });
+    </script>
+    
+    
+    <!-- code folding -->
+    
+    <!-- dynamically load mathjax for compatibility with self-contained -->
+    
+    <script>
+      (function ()
+      {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+        document.getElementsByTagName("head")[0].appendChild(script);
+      })();
+    </script>
+  </body>
+</html>
