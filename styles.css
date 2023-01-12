@@ -6,7 +6,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #006DAE;
-  height: 75px;
+  height: 65px;
 }
 
 li {
@@ -21,7 +21,7 @@ li a {
   text-decoration: none;
   font-size: large;
   /*background-color: #969696;*/
-  height: 75px;
+  height: 65px;
 }
 
 li a:hover {
