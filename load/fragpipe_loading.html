@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>FragPipe-Analyst</title>
+      <meta http-equiv = "refresh" content = "1; url = https://analyst-suites.org/apps/fragpipe-analyst/" />
+      <style>
+          .loading_layout{
+            padding-top: 10%;
+            text-align:center;
+          }
+          
+          /* Center the loader */
+          .loader {
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            z-index: 1;
+            width: 120px;
+            height: 120px;
+            margin: -76px 0 0 -76px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+          }
+          
+          @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+          }
+          
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+      </style>
+   </head>
+   <body>
+     <div class="loading_layout">
+      <h3>Launching FragPipe-Analyst...</h3>
+     </div>
+      <div class="loader"></div>
+   </body>
+</html>

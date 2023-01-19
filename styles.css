@@ -3,20 +3,32 @@ ul {
   list-style-type: none;
   margin-left: -15px;
   margin-right: -15px;
-  padding: 0;
   overflow: hidden;
   background-color: #006DAE;
   height: 65px;
 }
 
 li {
-  float: left;
+  display: block;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 li a {
-  display: block;
+  float: left;
   color: white;
-  text-align: center;
+  text-align: left;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: large;
+  /*background-color: #969696;*/
+  height: 65px;
+}
+
+.topnav_right {
+  float: right;
+  color: white;
+  text-align: right;
   padding: 20px 25px;
   text-decoration: none;
   font-size: large;
@@ -25,7 +37,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  color: white;
 }
 
 .header-background {
@@ -54,7 +66,9 @@ container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-rig
 */
 
 /*header styles */
-.header {
+
+@media screen and (min-width:601px) {
+  .header {
   /*padding: 30px;*/
   padding-top: 2%;
   text-align: center;
@@ -81,15 +95,55 @@ container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-rig
 
 .about-text{
   margin-top: 5%;
-  margin-left: 15%;
+  margin-left: 17%;
   margin-right: 15%;
-  padding: 0px;
-  text-align: left;
+  text-align: justify;
   background: white;
   color: #000000;
-  font-size: 25px;
+  font-size: 22px;
   font-family: Helvetica, sans-serif, Arial;
 }
+}
+
+@media screen and (max-width:600px) {
+  .header {
+  /*padding: 30px;*/
+  padding-top: 2%;
+  text-align: center;
+  background: white;
+  /*color: gray;*/
+  color: #006DAE;
+  font-size: 30px;
+  font-style: bold;
+  font-family: Helvetica, sans-serif, Arial;
+  /*font-family: Helvetica;*/
+}
+.subheader{
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  text-align: center;
+  background: white;
+  color: gray;
+  /*color: #006DAE;*/
+  font-size: 15px;
+  /*font-style: italic;*/
+  font-family: Helvetica, sans-serif, Arial;
+}
+
+.about-text{
+  margin-top: 5%;
+  margin-left: 17%;
+  margin-right: 15%;
+  text-align: justify;
+  background: white;
+  color: #000000;
+  font-size: 15px;
+  font-family: Helvetica, sans-serif, Arial;
+}
+}
+
+
 
 /* Changing the Color of Hyperlinked Text 
 a {
@@ -136,11 +190,11 @@ a {
 }
 
 
-.webapps {
+.webapps, .webapps_notuse {
   /*background-color:#FEDE00;*/
   /*background-color:#E6E6E6;*/
   /*background-color: #027EB6;*/
-  height: 100px;
+  height: 120px;
   /*margin-top: 100px;*/
   /*margin-bottom: 100px;*/
   margin-left: 5%;
@@ -150,31 +204,45 @@ a {
 
 .webapps:hover {
   /*background-color:#e44e5d;*/
-  background-color:#027EB6;
+  background-color:#092946;
+}
+
+.sub-unit3 a,h5_1 {
+  color: #000000;
+}
+
+.webapps:hover .sub-unit3 a {
+  color: #FFFFFF;
+}
+
+.webapps:hover h5_1 {
+  color: #FFFFFF;
+}
+
+.h5_1{
+  
 }
 
 /* Hover on*/
 .showme {
   /*display: none;*/
   display: none;
-  height: 200px;
 }
+
 
 .showhim:hover .showme {
   display: block;
-  height: 200px;
-  margin-top: 22px;
-}
+  margin-top: 42px;
+} 
 
 .webapp1{
-  background-color: #006DAE;
+  background-color: #034e7c;
 }
 .webapp2{
-  background-color: #000000;
+  background-color: #027EB6;
 }
 .webapp3{
-  background-color: #FFFFFF;
-  border: 1px solid #000000;
+  background-color: #CCd9E7;
   margin-top: 20px;
 }
 .webapp4{
@@ -188,11 +256,58 @@ a {
 }
 
 
+/* Float four columns side by side */
+.lfq_pub {
+  display: table-cell;
+  float: left;
+  width: 50%;
+  text-align: center;
+  height: 28px;
+  background-color: #18bc9c;
+  border-left:solid 1px #000000;
+  border-right:solid 1px #000000;
+  border-top:solid 1px #000000;
+  border-bottom:solid 1px #000000;
+}
+
+.lfq_dev {
+  display: table-cell;
+  float: left;
+  width: 50%;
+  height: 28px;
+  text-align: center;
+  /* background-color: #D93F00; 
+  background-color: #746FB2;*/
+  background-color: #ef8a62;
+  border-right:solid 1px #000000;
+  border-top:solid 1px #000000;
+  border-bottom:solid 1px #000000;
+}
+
+.lfq_pub p,.lfq_dev p {
+  color:#FFFFFF;
+  font-weight: bold;
+}
+
+/* use for create new line in card*/
+.blank {
+  float: left;
+}
+
+
 /* add a ruleset that changes the font size and positioning of the text */
 .project-text {
   text-align:center;
   font-size:30px;
   padding-top: 20px;
+  font-family: Helvetica, sans-serif, Arial;
+}
+
+/* apps not be released*/
+.project-text_no {
+  text-align:center;
+  font-size:30px;
+  padding-top: 40px;
   font-family: Helvetica, sans-serif, Arial;
 }
 
@@ -206,14 +321,13 @@ a {
   height: 150px;
   background-color:#E6E6E6;
   position:relative;
-  text-align:left;
+  text-align:center;
   color:black;
   margin-bottom:30px;
   margin-left:0px;
   font-size: 15px;
   font-weight: normal;
   /*padding:0 10px;*/
-  text-align: center;
 }
 
 
@@ -227,44 +341,66 @@ a {
   font-family: Helvetica, sans-serif, Arial;
   font-size: 20px;
   color:grey;
-  margin-top: 200px;
+  margin-top: 40px;
 }
 
 
 .footer-background{
   background-color: #006DAE;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .buffer-zone{
-  margin-bottom: 50%;
+  margin-bottom: 0%;
 }
 
 /*
 The below is from https://codepen.io/dcode-software/pen/JjjpzLE
 */
 
-.cards {
-  margin: 0 auto;
-  max-width: 1800px;
-  /*max-width: 100% ;*/
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  grid-auto-rows: auto;
-  gap: 10px;
-  font-family: sans-serif;
-  padding-top: 30px;
+@media screen and (min-width:1280px) {
+    .cards {
+      margin-left: 15%;
+      margin-right: 15%;
+      /*margin: 0 auto;
+      /*max-width: 1800px;
+      /*max-width: 100% ;*/
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: auto;
+      gap: 10px;
+      font-family: sans-serif;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:1279px) {
+    .cards {
+      margin-left: 15%;
+      margin-right: 15%;
+      /*margin: 0 auto;
+      /*max-width: 1800px;
+      /*max-width: 100% ;*/
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-auto-rows: auto;
+      gap: 10px;
+      font-family: sans-serif;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
 }
 
 .cards * {
   box-sizing: border-box;
 }
 
-
 .card {
   /*width: calc(1800px/3);*/
   /*width: 33.33%;*/
   width: inherit;
-  height: 250px;
 }
 
 
@@ -272,6 +408,16 @@ The below is from https://codepen.io/dcode-software/pen/JjjpzLE
 The above is from https://codepen.io/dcode-software/pen/JjjpzLE
 */
 
+.cards_title_part h3{
+  display: block;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: #006DAE;
+  padding-left: 20px;
+  padding-bottom:0px;
+  text-align: left;
+  border-bottom: 2px solid #E6E6E6;
+}
 
 
 

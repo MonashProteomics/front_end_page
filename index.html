@@ -21,6 +21,7 @@
       h3 {font-size: 24px;}
       h4 {font-size: 18px;}
       h5 {font-size: 16px;}
+      h5_1 {font-size: 16px;}
       h6 {font-size: 12px;}
       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
       pre:not([class]) { background-color: white }
@@ -203,6 +204,10 @@
           <li>
             <a href="about.html">About</a>
           </li>
+          <li>
+            <a class="topnav_right" href="https://github.com/MonashProteomics/" target=”_blank”>GitHub <i class="fa fa-github"></i> </a>
+          </li>
+
         </ul>
       </nav>
 
@@ -215,17 +220,20 @@
       <div>
         <p class="subheader">A Compilation of Easy-To-Use Web Applications for <br> Proteomic Data Analysis and Visualisation <br><br>
           <p class="p2"> Powered by
-            <a href="https://www.monash.edu/researchinfrastructure/mpmf">MPMF</a>
+            <a href="https://www.monash.edu/researchinfrastructure/mpmf" target=”_blank”>MPMF</a>
             and
-            <a href="https://www.monash.edu/researchinfrastructure/bioinformatics">MBP</a>
+            <a href="https://www.monash.edu/researchinfrastructure/bioinformatics" target=”_blank”>MBP</a>
           </p>
         </p>
-      <p><br><br><br><br><br></p>
+      <p><br></p>
       </div>
 
       <!-- Start Body part ------------------------------------------------------------------------------------------------------------------------ -->
       <!-- Tiles on row 1 --> 
-      <div class="cards">
+  <div class="cards_title_part">
+    <h3 id = "card_title">Active</h3>
+  </div>
+   <div class="cards">
          <!-- 1. LFQ-Analyst -->
         <div class="card">
           <!--<div class="tile">-->
@@ -233,133 +241,139 @@
               <div class="showhim">
                 <h2 class="project-text">
                   <!-- <a href="http://118.138.235.40:3838/LFQ-Analyst_Fragpipe/" style="color:#0f293c">LFQ-Analyst<h4>(MaxQuant)</h4></a> -->
-                  <a href="apps/lfq-analyst" style="color:#FFFFFF">LFQ-Analyst</a>
-                  <h5 style="color:#18cb3f; text-align:center">(Requires MaxQuant Output Data)</h5>
+                  <p style="color:#FFFFFF">LFQ-Analyst</p>
+                  <h5 style="color:#FFFFFF; text-align:center">(Requires MaxQuant Output Data)</h5>
                 </h2>
+                <div class="lfq_pub">
+                  <a href="load/lfq_pub_loading.html" style="color:#FFFFFF">
+                    <p>
+                      Release Version
+                    </p>
+                  </a>
+                </div>
+                <div class="lfq_dev">
+                  <a href="load/lfq_dev_loading.html" style="color:#FFFFFF">
+                     <p>
+                      Dev. Version
+                    </p>
+                  </a>
+                </div>
                 <div class="showme">
                   <h5 class="sub-unit">
-                    <br><br> Fully automated downstream statistical analysis and
+                    <br> Fully automated downstream statistical analysis and
                     visualisation tool for <em>label-free</em> quantitative proteomic data
-                    pre-processed with <strong>MaxQuant</strong>. <br><br> For more information, please see our publication at <a
-                    href="https://pubs.acs.org/doi/10.1021/acs.jproteome.9b00496">ACS Publications</a>. <br><br>
+                    pre-processed with <strong>MaxQuant</strong>. <br><br> Release version (stable) is published at <a
+                    href="https://pubs.acs.org/doi/10.1021/acs.jproteome.9b00496" target=”_blank”>ACS Publications</a>, for discovering more features, please try the latest Development Version. <br>
                   </h5>
                 </div>
               </div>
+              <div class="blank"></div>
+              
             </div>
         </div>  
 
-         <!-- 2. LFQ-Analyst-DEV -->
+         <!-- 2. Phospho-Analyst -->
          <div class="card">
           <!--<div class="tile">-->
             <div class="webapps webapp2">
               <div class="showhim">
                 <h2 class="project-text">
-                  <!-- <a href="http://118.138.235.40:3838/LFQ-Analyst_Fragpipe/" style="color:#0f293c">LFQ-Analyst<h4>(MaxQuant)</h4></a> -->
-                  <a style="color:#FFFFFF">LFQ-Analyst-Dev</a>
-                  <h5 style="color:#18cb3f; text-align:center">(Requires MaxQuant Output Data)</h5>
+                  <a href="load/phospho_loading.html"  style="color:#FFFFFF">Phospho-Analyst</a>
+                  <h5 style="color:#FFFFFF; text-align:center">(Requires MaxQuant Output Data)</h5>
                 </h2>
                 <div class="showme">
                   <h5 class="sub-unit">
-                    <br><br> This is the development version of the LFQ-Analyst and soon to be released. <br><br>
+                    <br><br> Fully automated downstream statistical analysis and visualisation tool for <em>phosphoproteomic</em> datasets pre-processed with <strong>MaxQuant</strong>. <br><br>
                   </h5>
                 </div>
               </div>
+              <div class="blank"></div>
             </div>
         </div>  
         
-        <!-- 3. Phospho-Analyst -->
+        <!-- 3. FragPipe-Analyst -->
         <div class="card">
           <!--<div class="tile">-->
             <div class="webapps webapp3">
               <div class="showhim">
                 <h2 class="project-text sub-unit3">
-                  <!-- <a href="http://118.138.235.40:3838/PhosphoAnalyst/" style="color:#0f293c" >Phospho-Analyst</a> -->
-                  <a href="apps/phospho-analyst" style="color:#000000" >Phospho-Analyst</a>
-                  <h5 style="color:#18cb3f; text-align:center">(Requires MaxQuant Output Data)</h5>
-                </h2>
-                <div class="showme">
-                  <h5 class="sub-unit"> 
-                    <br><br> Fully automated downstream statistical analysis and visualisation tool for <em>phosphoproteomic</em> datasets pre-processed with MaxQuant. <br><br>
-                  </h5>
-                </div>
-              </div>
-            </div>
-        </div>
-          
-          
-
-          
-        <!-- Tiles on row 2 -->
-        <!-- 4. FragPipe-Analyst -->
-        <div class="card">
-          <!--<div class="tile">-->
-            <div class="webapps webapp4">
-              <div class="showhim">
-                <h2 class="project-text">
-                  <!-- <a href="http://118.138.235.40:3838/LFQ-Analyst_Fragpipe/" style="color:#0f293c" >FragPipe-Analyst</a> -->
-                  <a href="apps/fragpipe-analyst" style="color:#FFFFFF" >FragPipe-Analyst</a><br><br> 
+                  <a href="load/fragpipe_loading.html">FragPipe-Analyst</a><br>
+                  <h5_1 style="text-align:center">(Requires FragPipe Output Data)</h5_1>
                 </h2>
                 <div class="showme">
                   <h5 class="sub-unit">
-                    <br><br> Recommended downstream statistical analysis and visualisation tool for proteomic data pre-processed with <em>FragPipe</em> and other 
-                    selected software packages developed in the <a href="https://fragpipe.nesvilab.org/">Nesvizhskii Lab</a>. <br><br>
+                    <br><br> Recommended downstream statistical analysis and visualisation tool for proteomic data pre-processed with <strong>FragPipe</strong> and other 
+                    selected software packages developed in the <a href="https://fragpipe.nesvilab.org/" target=”_blank”>Nesvizhskii Lab</a>. <br><br>
                   </h5>
                 </div>
               </div>
+              <div class="blank"></div>
             </div>
         </div>
-
-        <!-- 5. DIA-Analyst -->
+      </div> <!-- cards_active end -->
+    
+  
+  <br>
+  <div class="cards_title_part">
+    <h3 id = "card_title">Coming Soon</h3>
+  </div>
+   
+   <div class="cards">
+             <!-- Tiles on row 2 -->
+        <!-- 4. TMT-Analyst -->
         <div class="card">
           <!--<div class="tile">-->
-            <div class="webapps webapp5">
+            <div class="webapps_notuse webapp4">
               <div class="showhim">
-                <h2 class="project-text">
-                  <a style="color:#FFFFFF" >DIA-Analyst</a><br><br> 
+                <h2 class="project-text_no">
+                  <p style="color:#FFFFFF" >TMT-Analyst</p><br><br> 
                 </h2>
-                <div class="showme">
-                  <div class="sub-unit">
-                    <br><br> DIA-Analyst is under development and will be released soon. <br><br>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-
-        <!-- 6. TMT-Analyst -->
-        <div class="card">
-          <!--<div class="tile">-->
-            <div class="webapps webapp6">
-              <div class="showhim">
-                <h2 class="project-text">
-                  <a style="color:#000000" >TMT-Analyst</a><br><br> 
-                </h2>
-                <div class="showme">
+               <!-- <div class="showme">
                   <div class="sub-unit">
                     <br><br> TMT-Analyst is under development and will be released soon. <br><br>
                   </div>
-                </div>
+                </div> -->
+              </div>
+
+            </div>
+        </div>
+
+        <!-- 5. Pathway-Analyst -->
+        <div class="card">
+          <!--<div class="tile">-->
+            <div class="webapps_notuse webapp5">
+              <div class="showhim">
+                <h2 class="project-text_no">
+                  <p style="color:#FFFFFF" >Pathway-Analyst</p><br><br> 
+                </h2>
+              </div>
+             <!-- <div class="showme">
+                  <div class="sub-unit">
+                    <br><br> Pathway-Analyst is under development and will be released soon. <br><br>
+                  </div>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- 6. DIA-Analyst -->
+        <div class="card">
+          <!--<div class="tile">-->
+            <div class="webapps_notuse webapp6">
+              <div class="showhim">
+                <h2 class="project-text_no">
+                  <p style="color:#000000" >DIA-Analyst</p><br><br> 
+                </h2>
+               <!--  <div class="showme">
+                  <div class="sub-unit">
+                    <br><br> DIA-Analyst is under development and will be released soon. <br><br>
+                  </div>
+                </div> -->
               </div>
             </div>
         </div>
-          
-        <!-- 6. XXX-Analyst 
-        <div class="card">
-            #<div class="tile">
-            <div class="webapps webapp6">
-              <div class="showhim">
-                <h2 class="project-text">
-                  <a href="apps/tmt-analyst" style="color:#000000" ></a> <br><br> 
-                </h2>
-                <div class="showme">
-                  <div class="sub-unit">
-                    <br><br> More analyst tools to come. <br><br>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>-->
-      </div>
+   </div>
+    
+ 
     </div>
   </div>
 
@@ -367,7 +381,7 @@
       <!-- Feedback -->
       <div class="feedback">
         <p> For any feedback or issues regarding the apps, please reach out on our
-          <a href="https://github.com/MonashProteomics/" >GitHub</a>.
+          <a href="https://github.com/MonashProteomics/" target=”_blank”>GitHub</a>.
         </p>
       </div>
       
@@ -376,17 +390,17 @@
       &nbsp;
       <hr />
       <div class="footer-background">
+        <br>
       <p style="text-align: center; font-family: Arial, Helvetica, sans-serif; color: #FFFFFF;">A work by:</p>
-      <p style="text-align: center;"> <a href="https://www.monash.edu/researchinfrastructure/mpmf/" </a> Monash Proteomics and Metabolomics Facility </p>
-      <p style="text-align: center;"> <a href="https://www.monash.edu/researchinfrastructure/bioinformatics" </a> Monash Bioinformatics Platform </p>
+      <p style="text-align: center;"> <a href="https://www.monash.edu/researchinfrastructure/mpmf/" target=”_blank”</a> Monash Proteomics and Metabolomics Facility </p>
+      <p style="text-align: center;"> <a href="https://www.monash.edu/researchinfrastructure/bioinformatics" target=”_blank”</a> Monash Bioinformatics Platform </p>
       <!-- Add icon library -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!-- Add font awesome icons -->
       <p style="text-align: center;">
-        <a href="https://github.com/MonashProteomics/" class="fa fa-github"></a>
-        <a href="https://www.monash.edu/" class="fa fa-university"></a>
+        <a href="https://github.com/MonashProteomics/" class="fa fa-github" target=”_blank”></a>
+        <a href="https://www.monash.edu/" class="fa fa-university" target=”_blank”></a>
       </p>
-
       &nbsp;
       </div>
     </div>
