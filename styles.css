@@ -264,10 +264,6 @@ a {
   text-align: center;
   height: 28px;
   background-color: #18bc9c;
-  border-left:solid 1px #000000;
-  border-right:solid 1px #000000;
-  border-top:solid 1px #000000;
-  border-bottom:solid 1px #000000;
 }
 
 .lfq_dev {
@@ -279,14 +275,12 @@ a {
   /* background-color: #D93F00; 
   background-color: #746FB2;*/
   background-color: #ef8a62;
-  border-right:solid 1px #000000;
-  border-top:solid 1px #000000;
-  border-bottom:solid 1px #000000;
 }
 
 .lfq_pub p,.lfq_dev p {
   color:#FFFFFF;
   font-weight: bold;
+  margin-top:2px;
 }
 
 /* use for create new line in card*/
