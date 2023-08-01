@@ -207,20 +207,18 @@ a {
   background-color:#092946;
 }
 
-.sub-unit3 a,h5_1 {
+.sub-unit3 p {
   color: #000000;
 }
 
+/*
 .webapps:hover .sub-unit3 a {
   color: #FFFFFF;
-}
+}   
+*/
 
-.webapps:hover h5_1 {
+.webapps:hover .sub-unit3 p {
   color: #FFFFFF;
-}
-
-.h5_1{
-  
 }
 
 /* Hover on*/
@@ -262,7 +260,7 @@ a {
   float: left;
   width: 50%;
   text-align: center;
-  height: 28px;
+  height: 28.5px;
   background-color: #18bc9c;
 }
 
@@ -270,17 +268,36 @@ a {
   display: table-cell;
   float: left;
   width: 50%;
-  height: 28px;
+  height: 28.5px;
   text-align: center;
   /* background-color: #D93F00; 
   background-color: #746FB2;*/
   background-color: #ef8a62;
 }
 
-.lfq_pub p,.lfq_dev p {
+.lfq_pub p,.lfq_dev p,.frag_pub p, .frag_dev p {
   color:#FFFFFF;
   font-weight: bold;
   margin-top:2px;
+}
+
+/* Float four columns side by side */
+.frag_pub {
+  display: table-cell;
+  float: left;
+  width: 50%;
+  text-align: center;
+  height: 28.5px;
+  background-color: #4575b4;
+}
+
+.frag_dev {
+  display: table-cell;
+  float: left;
+  width: 50%;
+  height: 28.5px;
+  text-align: center;
+  background-color: #ef8a62;
 }
 
 /* use for create new line in card*/
