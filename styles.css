@@ -262,6 +262,9 @@ a {
   background-color: #969696;
 }
 .webapp6{
+  background-color: #a6cee3;
+}
+.webapp7{
   background-color: #E6E6E6;
 }
 
@@ -385,29 +388,92 @@ The below is from https://codepen.io/dcode-software/pen/JjjpzLE
 
 @media screen and (min-width:1280px) {
     .cards {
-      margin-left: 25%; /*15% for 3 cells*/
-      margin-right: 25%;
+      margin-left: 15%; /*15% for 3 cells, 25% for 2 cells*/
+      margin-right: 15%;
       /*margin: 0 auto;
       /*max-width: 1800px;
       /*max-width: 100% ;*/
       display: grid;
       /*grid-template-columns: 1fr 1fr 1fr;*/
-      grid-template-columns: 1fr 1fr;
-      grid-auto-rows: auto;
+      /*grid-template-columns: 1fr 1fr;*/
+      grid-template-columns: repeat(6, 1fr);
+      justify-content: center;
       gap: 10px;
       font-family: sans-serif;
       padding-top: 0px;
       padding-bottom: 0px;
+      flex: 1 1 auto;
+      counter-reset: grid;
     }
+
+    /*
+    The card css is from https://css-irl.info/controlling-leftover-grid-items/
+    */
+    .card {
+      /*width: calc(1800px/3);*/
+      /*width: 33.33%;*/
+      width: inherit;
+      grid-column: span 2;
+
+      /* Dealing with 2 orphan items */
+      &:last-child:nth-child(3n - 1) {
+        grid-column-end: -2;
+      }
+      
+      &:nth-last-child(2):nth-child(3n + 1) {
+        grid-column-end: 4;
+      }
+
+      /* Dealing with single orphan */
+      &:last-child:nth-child(3n - 2) {
+        grid-column-end: 5;
+      }
+    }
+    
 }
 
-@media screen and (max-width:1279px) {
+@media screen and (min-width:900px) and (max-width:1279px) {
     .cards {
       margin-left: 15%;
       margin-right: 15%;
       /*margin: 0 auto;
       /*max-width: 1800px;
       /*max-width: 100% ;*/
+      display: grid;
+      /*grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
+      /* grid-auto-rows: auto; */
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      font-family: sans-serif;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      flex: 1 1 auto;
+      counter-reset: grid;
+    }
+    .card {
+      width: inherit;
+      grid-column: span 2;
+
+      /* Dealing with 2 orphan items */
+      &:last-child:nth-child(2n - 1) {
+        grid-column-end: -2;
+      }
+      
+      &:nth-last-child(2):nth-child(2n + 1) {
+        grid-column-end: 4;
+      }
+
+      /* Dealing with single orphan */
+      &:last-child:nth-child(2n - 2) {
+        grid-column-end: 5;
+      }
+    }
+}
+
+@media screen and (max-width:899px) {
+    .cards {
+      margin-left: 15%;
+      margin-right: 15%;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       grid-auto-rows: auto;
@@ -422,11 +488,7 @@ The below is from https://codepen.io/dcode-software/pen/JjjpzLE
   box-sizing: border-box;
 }
 
-.card {
-  /*width: calc(1800px/3);*/
-  /*width: 33.33%;*/
-  width: inherit;
-}
+
 
 
 /*
@@ -435,8 +497,8 @@ The above is from https://codepen.io/dcode-software/pen/JjjpzLE
 
 .cards_title_part h3{
   display: block;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
   color: #006DAE;
   padding-left: 20px;
   padding-bottom:0px;
