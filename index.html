@@ -411,7 +411,35 @@
     
  
     </div>
+  
+  <!-- announcement-bar -->
+  <div id="announcement-bar" style="background-color: #f8d7da; color: #721c24; padding: 8px; text-align: center; position: fixed; top: 0; width: 100%; z-index: 1000; display: flex; justify-content: center; align-items: center;">
+    <span style="flex-grow: 1; text-align: center;">
+        🗓️ Important Announcement: Our site will be undergoing maintenance on September 4th, 2024, from 9 AM to 5 PM (AEST). 
+    </span>
+    <button onclick="document.getElementById('announcement-bar').style.display='none';" style="background: none; border: none; color: #721c24; font-size: 20px; cursor: pointer; margin-left: 20px;">&times;</button>
   </div>
+  
+  <script>
+    // Set the expiration date and time for the announcement in AEST
+    var expirationDate = new Date('2024-09-04T17:01:00+10:00'); // 17:01 AEST on September 04, 2024
+    // Get the current date and time
+    var today = new Date();
+    // Compare today's date with the expiration date
+    if (today > expirationDate) {
+        // If today is after the expiration date, hide the announcement bar
+        document.getElementById('announcement-bar').style.display = 'none';
+    } else {
+        // Set the announcement to disappear after 10 seconds (10000 milliseconds)
+        setTimeout(function() {
+            document.getElementById('announcement-bar').style.display = 'none';
+        }, 10000);
+    }
+    </script>
+
+
+
+
 
       <!-- Start footer part ------------------------------------------------------------------------------------------------------------------- -->
       <!-- Feedback -->
